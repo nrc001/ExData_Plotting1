@@ -1,4 +1,9 @@
 plot2<-function() {
+  
+  ## loading lybreries
+  
+  install.packages("lubridate")
+  library(lubridate)
 
   ## reading data
 
@@ -9,7 +14,7 @@ plot2<-function() {
   ## Create time axis mergin Date and Time variables
   
   data$DateTime<-dmy_hms(paste(as.character(data$Date),as.character(data$Time)))
-
+  
   ## plotting  
  
   png(filename="plot2.png",width=480,height=480)

@@ -1,5 +1,10 @@
 plot4<-function() {
 
+  ## loading lybreries
+  
+  install.packages("lubridate")
+  library(lubridate)
+  
   ## reading data
 
   data_subset<-read.table("household_power_consumption.txt",sep=";",header=TRUE)
